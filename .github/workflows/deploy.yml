@@ -31,7 +31,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ec2-user
           key: ${{ secrets.SSH_KEY }}
-          port: 22
+          port: 2222
           source: "./build/libs/*.jar"
           target: "~"
           strip_components: 2
