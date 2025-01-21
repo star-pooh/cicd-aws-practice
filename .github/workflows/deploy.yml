@@ -42,7 +42,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ec2-user
           key: ${{ secrets.SSH_KEY }}
-          port: 22
+          port: 2222
           script_stop: true
           script: |
             sudo yum update -y && sudo yum install -y java-21-amazon-corretto
